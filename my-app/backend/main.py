@@ -19,7 +19,7 @@ if environment == "dev":
     logger.warning("Running in development mode - allowing CORS for all origins")
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["http://localhost", "http://localhost:8000", "http://localhost:3000", "http://127.0.0.1:3000", "https://ldba-python.onrender.com", "https://ldba.onrender.app","http://ldba-python.onrender.com", "http://ldba.onrender.app""],
+        allow_origins=["http://localhost", "http://localhost:8000", "http://localhost:3000", "http://127.0.0.1:3000", "https://ldba-python.onrender.com", "https://ldba.onrender.app","http://ldba-python.onrender.com", "http://ldba.onrender.app"],
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
